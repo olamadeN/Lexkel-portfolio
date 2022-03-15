@@ -55,16 +55,42 @@ window.onclick = function (event) {
 } */
 
 function night_mode(){
-    var img = document.getElementById("mode-toggle-img");
     var body = document.body;
-
-
+    var img = document.getElementById("mode-toggle-img");    
+    var logo = document.getElementById("nav-logo");
+    var linkedin = document.getElementById("linkedin");
+    var facebook = document.getElementById("facebook");
+    var twitter = document.getElementById("twitter");
+    var baby = document.getElementById("baby");
+    var navbar_AM = document.getElementById("nav-link-AM");
+    var navbar_MS = document.getElementById("nav-link-MS");
+    var navbar_MWH = document.getElementById("nav-link-MWH");
+    var navbar_CM = document.getElementById("nav-link-CM");
 
     if(body.classList.toggle("dark")){
-        if(img.src == "mode-switch.png"){
-        img.src = "toggle-light.png";
-        }
+       img.src="img/toggle-light.png"; 
+       logo.src="img/Dark-mode/dark-logo.png"; 
+       linkedin.src="img/Dark-mode/linkedin-dark.png"; 
+       facebook.src="img/Dark-mode/facebook-dark.png"; 
+       twitter.src="img/Dark-mode/twitter-dark.png"; 
+       baby.src="img/Dark-mode/baby-dark.png";
+       navbar_AM.style.color="white"; 
+       navbar_MS.style.color="white"; 
+       navbar_MWH.style.color="white"; 
+       navbar_CM.style.color="white"; 
+    }else{
+        img.src="img/mode-switch.png";
+        logo.src="img/Logo.png";
+        linkedin.src="img/socials-img/bxl_linkedin.png"; 
+        facebook.src="img/socials-img/eva_facebook-fill.png"; 
+        twitter.src="img/socials-img/Vector (1).png"; 
+        baby.src="img/socials-img/Vector.png"; 
+        navbar_AM.style.color="#2f2f2f"; 
+        navbar_MS.style.color="#2f2f2f"; 
+        navbar_MWH.style.color="#2f2f2f"; 
+        navbar_CM.style.color="#2f2f2f"; 
     }
+
     
     
 }

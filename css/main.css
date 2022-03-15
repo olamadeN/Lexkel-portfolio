@@ -3,11 +3,14 @@
     src: url(fonts/Montserrat/Montserrat-Black.ttf);
     font-family:mont;
 }
+html{
+    scroll-behavior: smooth !important;
+}
 body{
     font-family: mont;
     font-size: 18px;
     background: #E5E5E5 !important;
-    scroll-behavior: smooth !important;
+
 }
 .dark{
     background: #16231C !important;
@@ -15,7 +18,7 @@ body{
 
 }
 .nav-link{
-  color: #2f2f2f !important;  
+  color: #2f2f2f;  
 }
 .nav-link:hover{
     color: #2f2f2f;
