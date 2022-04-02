@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/aos.css">
 </head>
 <body class="container" id="body">
     <nav class="container navbar navbar-expand py-3 w-100">
@@ -39,7 +40,7 @@
         </div> 
     </nav>
     <div class="intro">
-        <div class="d-sm-flex">
+        <div class="d-sm-flex" data-aos="fade-up">
             <div class="col-sm-2 float-left socials">
                 <ul>
 
@@ -86,7 +87,7 @@
         </div>
     </div>
 
-    <div class="about-me col-sm-10 float-right" id="about-me">
+    <div class="about-me col-sm-10 float-right" id="about-me" data-aos="fade-up">
         <h1 class="heading"> about me<span class="dot">.</span></h1>
         <p class="content">
             I’m a dedicated, efficient and self-motivated software engineer building innovative and top-notched
@@ -96,9 +97,9 @@
         <button class="button p-2 mt-4">Download CV</button>            
     </div>  
 
-    <div class="skills col-sm-10 float-right" id="my-skills">
+    <div class="skills col-sm-10 float-right" id="my-skills" data-aos="fade-up" >
         <h1 class="heading"> my skills<span class="dot">.</span></h1>
-        <div class="dropdown mt-5 d-sm-flex w-100  ">
+        <div class="dropdown mt-5 d-sm-flex w-100" data-aos="fade-up">
             <div class="col-sm-7 float-left p-0">
                 <span class="drop-click" onclick="show_list()">
                     <img class="float-left mr-4" width="8%" src="img/Vector.png" alt="">
@@ -137,7 +138,7 @@
             </div>
         </div>
 
-        <div class="dropdown mt-5 d-sm-flex w-100  ">
+        <div class="dropdown mt-5 d-sm-flex w-100" data-aos="fade-up">
             <div class="col-sm-7 float-left p-0">
                 <span class="drop-click" onclick="show_list_3()">
                     <img class="float-left mr-4 " width="6%" src="img/Vector (2).png" alt="">
@@ -177,12 +178,12 @@
         </div>
     </div>
 
-    <div class="work-history col-sm-10 float-right" id="work-history">
+    <div class="work-history col-sm-10 float-right" id="work-history" data-aos="fade-up">
         <h1 class="heading"> my work history<span class="dot">.</span></h1>
         <img class="history-img pb-5" src="img/Work.png" alt="">              
     </div>
 
-    <div class="my-projects col-sm-10 float-right">
+    <div class="my-projects col-sm-10 float-right" data-aos="fade-up">
         <h1 class="heading mb-5"> my projects<span class="dot">.</span></h1>
         <div id="projectControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner ">
@@ -240,7 +241,7 @@
         </div>
     </div>
 
-    <div class="contact-me col-sm-10 float-right" id="contact-me">
+    <div class="contact-me col-sm-10 float-right" id="contact-me" data-aos="fade-up">
         <h1 class="heading"> contact me<span class="dot">.</span></h1>
         <form action="" method="post">
             <div class="d-sm-flex mb-4">
@@ -310,6 +311,15 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+        AOS.init(
+        {
+            offset:300,
+            duration:1500,
+        }
+        );
+    </script>
 </body>
 </html>
 
