@@ -184,7 +184,7 @@ div.intro{
 .contact-me form #button{
     width:25%;
     margin-right:40%;
-    margin-left: 23%; 
+    margin-left: 27%; 
     margin-top:30px;  
     padding:1% 5%;
 }
@@ -197,12 +197,9 @@ footer nav div ul li{
     font-size: 13px;
 }
 
-@media screen and (max-width:400px){
+@media screen and (max-width:500px){
     #nav-logo{
         width:50%;
-    }
-    #navbarNav{
-        margin-left: -18%;
     }
     nav div ul li{
         font-size: 11px;
@@ -219,15 +216,12 @@ footer nav div ul li{
     .skills .dropdown .drop-click div{
         margin-bottom: 11px;
     }
-
     .contact-me form input{
         width: 90%;
         height: 50px;
-
     }
     .contact-me form textarea{
         width: 90%;
-
     }
     .contact-me form #button{
         width:40%;
